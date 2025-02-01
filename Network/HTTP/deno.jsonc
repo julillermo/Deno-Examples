@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    // The `allow-read=.` (with period) which paths
+    //    have been permitted
+    "dev": "deno run --watch --allow-read=. --allow-net file-server.ts",
+    "std": "deno run --watch --allow-read --allow-net std-file-server.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/http": "jsr:@std/http@^1.0.13"
+  }
+}
