@@ -2,8 +2,9 @@
   "tasks": {
     // The `allow-read=.` (with period) which paths
     //    have been permitted
-    "dev": "deno run --watch --allow-read=. --allow-net file-server.ts",
-    "std": "deno run --watch --allow-read --allow-net std-file-server.ts"
+    "dev": "deno run --allow-read=. --allow-net file-server.ts",
+    "std": "deno run --allow-read --allow-net std-file-server.ts",
+    "stream": "deno run --allow-net streaming.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
