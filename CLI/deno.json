@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "input-prompts": "deno run input-prompts.ts",
+    "permission-management": "deno run permission-management.ts",
+    "command-line-args": "deno run command-line-arguments.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
