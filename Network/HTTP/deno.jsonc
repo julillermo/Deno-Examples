@@ -2,12 +2,21 @@
   "tasks": {
     // The `allow-read=.` (with period) which paths
     //    have been permitted
-    "dev": "deno run --allow-read=. --allow-net file-server.ts",
-    "std": "deno run --allow-read --allow-net std-file-server.ts",
-    "stream": "deno run --allow-net streaming.ts"
+    "file-server": "deno run --allow-read=. --allow-net file-server.ts",
+    "std-file-server": "deno run --allow-read --allow-net std-file-server.ts",
+    "streaming": "deno run --allow-net streaming.ts",
+    "request": "deno run --allow-net http-requests.ts",
+    "hello-world": "deno run --allow-net hello-world.ts",
+    "routing": "deno run --allow-net routing.ts",
+    "web-sockets": "deno run --allow-net web-sockets.ts",
+    "tcp-connect": "deno run --allow-net tcp-connector-ping.ts",
+    "tcp-listen": "deno run --allow-net tcp-listener-ping.ts",
+    "tcp-echo": "deno run --allow-net tcp-echo.ts",
+    "tls-connect": "deno run --allow-net tcp-tls-ping.ts"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
     "@std/http": "jsr:@std/http@^1.0.13"
-  }
+  },
+  "compilerOptions": {}
 }
